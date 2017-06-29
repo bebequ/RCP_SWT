@@ -1,0 +1,322 @@
+!SESSION 2017-06-29 13:32:40.906 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.nebula.examples.nebula_examples
+Command-line arguments:  -product org.eclipse.nebula.examples.nebula_examples -data C:\workspace\Test_Scan/../runtime-nebula.product -dev file:C:/workspace/Test_Scan/.metadata/.plugins/org.eclipse.pde.core/nebula.product/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.e4.ui.model.workbench 4 0 2017-06-29 13:32:41.679
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.model.workbench [35]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-06-29 13:32:41.685
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.workbench [38]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore.change; bundle-version="2.5.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+       org.eclipse.e4.ui.model.workbench [35]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.workbench.addons.swt 4 0 2017-06-29 13:32:41.691
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.workbench.addons.swt [39]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+       org.eclipse.e4.ui.model.workbench [35]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+  Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench.swt
+    -> Export-Package: org.eclipse.e4.ui.internal.workbench.swt; bundle-symbolic-name="org.eclipse.e4.ui.workbench.swt"; bundle-version="0.14.1.v20160829-0832"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.addons.swt,org.eclipse.e4.ui.workbench.renderers.swt,org.eclipse.ui.workbench"
+       org.eclipse.e4.ui.workbench.swt [41]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore.xmi; bundle-version="2.7.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench; bundle-version="0.10.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench; bundle-version="1.4.0.v20160517-1624"; singleton:="true"
+              org.eclipse.e4.ui.workbench [38]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore.change; bundle-version="2.5.0"
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+                  -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.workbench.renderers.swt 4 0 2017-06-29 13:32:41.696
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.workbench.renderers.swt [40]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+       org.eclipse.e4.ui.model.workbench [35]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench.swt; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench.swt; bundle-version="0.14.1.v20160829-0832"; singleton:="true"
+       org.eclipse.e4.ui.workbench.swt [41]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench; bundle-version="0.10.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench; bundle-version="1.4.0.v20160517-1624"; singleton:="true"
+              org.eclipse.e4.ui.workbench [38]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore.change; bundle-version="2.5.0"
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+                  -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench; bundle-version="1.4.0.v20160517-1624"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 4 0 2017-06-29 13:32:41.702
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.workbench.swt [41]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore.xmi; bundle-version="2.7.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench; bundle-version="0.10.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench; bundle-version="1.4.0.v20160517-1624"; singleton:="true"
+       org.eclipse.e4.ui.workbench [38]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore.change; bundle-version="2.5.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+              org.eclipse.e4.ui.model.workbench [35]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.nebula.examples 4 0 2017-06-29 13:32:41.708
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.nebula.examples [57]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.108.1.v20160929-1045"; singleton:="true"
+       org.eclipse.ui [63]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.108.3.v20170216-1539"; singleton:="true"
+              org.eclipse.ui.workbench [64]
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench.addons
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench.addons; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.4.0.v20160517-1624"; version="0.0.0"; x-internal:="true"
+                     org.eclipse.e4.ui.workbench [38]
+                       Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore.change; bundle-version="2.5.0"
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [35]
+                              Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.4.0.v20160517-1624"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.ui 4 0 2017-06-29 13:32:41.713
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui [63]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.108.3.v20170216-1539"; singleton:="true"
+       org.eclipse.ui.workbench [64]
+         Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench.addons
+           -> Export-Package: org.eclipse.e4.ui.internal.workbench.addons; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.4.0.v20160517-1624"; version="0.0.0"; x-internal:="true"
+              org.eclipse.e4.ui.workbench [38]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore.change; bundle-version="2.5.0"
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+                  -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+                     org.eclipse.e4.ui.model.workbench [35]
+                       Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+         Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+           -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.4.0.v20160517-1624"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2017-06-29 13:32:41.717
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.workbench [64]
+  Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench.addons
+    -> Export-Package: org.eclipse.e4.ui.internal.workbench.addons; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.4.0.v20160517-1624"; version="0.0.0"; x-internal:="true"
+       org.eclipse.e4.ui.workbench [38]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore.change; bundle-version="2.5.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+              org.eclipse.e4.ui.model.workbench [35]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+  Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+    -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.4.0.v20160517-1624"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.equinox.app 0 0 2017-06-29 13:32:41.915
+!MESSAGE Product org.eclipse.nebula.examples.nebula_examples could not be found.
+
+!ENTRY org.eclipse.e4.emf.xpath 2 0 2017-06-29 13:32:41.986
+!MESSAGE Could not resolve module: org.eclipse.e4.emf.xpath [28]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.6.0"
+
+
+!ENTRY org.eclipse.ui 2 0 2017-06-29 13:32:41.991
+!MESSAGE Could not resolve module: org.eclipse.ui [63]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.108.3.v20170216-1539"; singleton:="true"
+       org.eclipse.ui.workbench [64]
+         Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+           -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.4.0.v20160517-1624"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+              org.eclipse.e4.ui.workbench [38]
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+                  -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+                     org.eclipse.e4.ui.model.workbench [35]
+                       Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+
+
+!ENTRY org.eclipse.nebula.examples 2 0 2017-06-29 13:32:41.995
+!MESSAGE Could not resolve module: org.eclipse.nebula.examples [57]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.108.1.v20160929-1045"; singleton:="true"
+       org.eclipse.ui [63]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.108.3.v20170216-1539"; singleton:="true"
+              org.eclipse.ui.workbench [64]
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.4.0.v20160517-1624"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [38]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [35]
+                              Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+
+
+!ENTRY org.eclipse.e4.ui.workbench.renderers.swt 2 0 2017-06-29 13:32:42.000
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.workbench.renderers.swt [40]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench; bundle-version="1.4.0.v20160517-1624"; singleton:="true"
+       org.eclipse.e4.ui.workbench [38]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+              org.eclipse.e4.ui.model.workbench [35]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-06-29 13:32:42.004
+!MESSAGE Could not resolve module: org.eclipse.ui.workbench [64]
+  Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+    -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.4.0.v20160517-1624"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+       org.eclipse.e4.ui.workbench [38]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+              org.eclipse.e4.ui.model.workbench [35]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2017-06-29 13:32:42.009
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.workbench [38]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+       org.eclipse.e4.ui.model.workbench [35]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+
+
+!ENTRY org.eclipse.e4.ui.model.workbench 2 0 2017-06-29 13:32:42.013
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.model.workbench [35]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 2 0 2017-06-29 13:32:42.018
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.workbench.swt [41]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench; bundle-version="0.10.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench; bundle-version="1.4.0.v20160517-1624"; singleton:="true"
+       org.eclipse.e4.ui.workbench [38]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+              org.eclipse.e4.ui.model.workbench [35]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+
+
+!ENTRY org.eclipse.e4.ui.workbench.addons.swt 2 0 2017-06-29 13:32:42.023
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.workbench.addons.swt [39]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+       org.eclipse.e4.ui.model.workbench [35]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="2.9.0"
+  Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench.swt
+    -> Export-Package: org.eclipse.e4.ui.internal.workbench.swt; bundle-symbolic-name="org.eclipse.e4.ui.workbench.swt"; bundle-version="0.14.1.v20160829-0832"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.addons.swt,org.eclipse.e4.ui.workbench.renderers.swt,org.eclipse.ui.workbench"
+       org.eclipse.e4.ui.workbench.swt [41]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench; bundle-version="0.10.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench; bundle-version="1.4.0.v20160517-1624"; singleton:="true"
+              org.eclipse.e4.ui.workbench [38]
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0"
+                  -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.2.0.v20160229-1459"; singleton:="true"
+
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-29 13:32:42.028
+!MESSAGE Application error
+!STACK 1
+java.lang.RuntimeException: No application id has been found.
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.startDefaultApp(EclipseAppContainer.java:242)
+	at org.eclipse.equinox.internal.app.MainApplicationLauncher.run(MainApplicationLauncher.java:29)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)

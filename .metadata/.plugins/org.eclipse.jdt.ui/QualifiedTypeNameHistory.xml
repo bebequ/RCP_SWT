@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.eclipse.nebula.examples.AbstractExampleTab"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.TabFolder"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Composite"/>
+<fullyQualifiedTypeName name="org.eclipse.nebula.examples.ExamplesView"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Listener"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Event"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Tracker"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.graphics.Rectangle"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.events.ControlAdapter"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.events.ControlEvent"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.graphics.Cursor"/>
+<fullyQualifiedTypeName name="org.eclipse.jface.bindings.keys.SWTKeyLookup"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.SWT"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+</qualifiedTypeNameHistroy>

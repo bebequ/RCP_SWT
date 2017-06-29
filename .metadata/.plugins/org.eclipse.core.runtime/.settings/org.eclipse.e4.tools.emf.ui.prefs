@@ -1,0 +1,8 @@
+DIALOG_HEIGHT=354
+DIALOG_WIDTH=554
+DIALOG_X_ORIGIN=8
+DIALOG_Y_ORIGIN=8
+eclipse.preferences.version=1
+list-tab-xml=<list-tab><columns><column><attribute>GoTree</attribute><width>30</width></column><column><attribute>GoXmi</attribute><width>34</width></column><column><attribute>Marked</attribute><width>41</width></column><column><attribute>Item</attribute><width>106</width></column><column><attribute>elementId</attribute><width>262</width></column><column><attribute>label</attribute><width>130</width></column></columns><filters/></list-tab>
+searchScope=PROJECT
+searchScopes=[PROJECT]

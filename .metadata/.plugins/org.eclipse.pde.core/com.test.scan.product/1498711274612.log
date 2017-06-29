@@ -1,0 +1,39 @@
+!SESSION 2017-06-29 13:41:14.348 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product com.test.scan.product -clearPersistedState
+Command-line arguments:  -product com.test.scan.product -data C:\workspace\Test_Scan/../runtime-com.test.scan.product -dev file:C:/workspace/Test_Scan/.metadata/.plugins/org.eclipse.pde.core/com.test.scan.product/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog -clearPersistedState
+
+!ENTRY org.eclipse.equinox.app 0 0 2017-06-29 13:41:15.096
+!MESSAGE Product com.test.scan.product could not be found.
+
+!ENTRY org.eclipse.nebula.widgets.oscilloscope.example 2 0 2017-06-29 13:41:15.115
+!MESSAGE Could not resolve module: org.eclipse.nebula.widgets.oscilloscope.example [66]
+  Unresolved requirement: Require-Bundle: org.eclipse.nebula.examples; bundle-version="1.0.4"
+
+
+!ENTRY org.eclipse.core.resources.win32.x86_64 2 0 2017-06-29 13:41:15.119
+!MESSAGE Could not resolve module: org.eclipse.core.resources.win32.x86_64 [65]
+  Unresolved requirement: Fragment-Host: org.eclipse.core.resources; bundle-version="[3.5.0,4.0.0)"
+
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-29 13:41:15.122
+!MESSAGE Application error
+!STACK 1
+java.lang.RuntimeException: No application id has been found.
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.startDefaultApp(EclipseAppContainer.java:242)
+	at org.eclipse.equinox.internal.app.MainApplicationLauncher.run(MainApplicationLauncher.java:29)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
